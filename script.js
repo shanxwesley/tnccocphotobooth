@@ -1,6 +1,6 @@
 (() => {
   const W = 600, H = 1900, PW = 520, PH = 390, PAD = 40, GAP = 24;
-  const TITLE = 'TNCCOC Youth Gather', DATE = 'Nov. 29, 2026';
+  const TITLE = 'TNCCOC Youth Gathering', DATE = 'Nov. 29, 2026';
 
   const BORDERS = [
     { id:'sunshine', name:'Sunshine', bg:['#fff3b0','#ffd36b'], text:'#6b4300', emoji:['☀️','🌻','✨'] },
