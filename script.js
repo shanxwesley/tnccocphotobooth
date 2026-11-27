@@ -1,5 +1,5 @@
 (() => {
-  const W = 600, H = 1900, PW = 520, PH = 390, PAD = 40, GAP = 24;
+  const W = 600, H = 1940, PW = 520, PH = 390, PAD = 40, GAP = 24;
   const TITLE = 'TNCCOC Youth Gather', DATE = 'Nov. 29, 2026';
 
   const BORDERS = [
@@ -235,17 +235,17 @@
     const fy = PAD + 4 * PH + 3 * GAP;           // 1672
     ctx.save();
     ctx.shadowColor = 'rgba(0,0,0,.2)'; ctx.shadowBlur = 10; ctx.shadowOffsetY = 4;
-    ctx.fillStyle = 'rgba(255,255,255,.88)'; roundRect(ctx, 50, fy + 6, W - 100, 170, 28); ctx.fill();
+    ctx.fillStyle = 'rgba(255,255,255,.88)'; roundRect(ctx, 50, fy + 44, W - 100, 160, 28); ctx.fill();
     ctx.restore();
     ctx.strokeStyle = b.text; ctx.lineWidth = 3; ctx.setLineDash([8, 7]);
-    roundRect(ctx, 58, fy + 14, W - 116, 154, 22); ctx.stroke(); ctx.setLineDash([]);
+    roundRect(ctx, 58, fy + 52, W - 116, 144, 22); ctx.stroke(); ctx.setLineDash([]);
     ctx.fillStyle = b.text;
-    ctx.font = '800 48px "Baloo 2","Trebuchet MS",sans-serif';
-    ctx.fillText('TNCCOC Youth Gather', W / 2, fy + 62);
+    ctx.font = '800 64px "Baloo 2","Trebuchet MS",sans-serif';
+    ctx.fillText('TNCCOC YG', W / 2, fy + 100);
     ctx.font = '700 36px "Baloo 2","Trebuchet MS",sans-serif';
-    ctx.fillText(DATE, W / 2, fy + 118);
-    emojiAt(E[0], 100, fy + 90, 30); emojiAt(E[1], W - 100, fy + 90, 30);
-    for (let x = 100, k = 0; x < W - 80; x += 68, k++) emojiAt(E[k % 3], x, H - 26, 22);
+    ctx.fillText(DATE, W / 2, fy + 160);
+    emojiAt(E[0], 100, fy + 128, 30); emojiAt(E[1], W - 100, fy + 128, 30);
+    for (let x = 100, k = 0; x < W - 80; x += 68, k++) emojiAt(E[k % 3], x, H - 30, 22);
   }
 
   /* ---------- Download ---------- */
